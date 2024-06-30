@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/echarts.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/macarons.js"></script>
+  <script src="js/china.js"></script>
+  <script src="js/countUp.js"></script>
+  <script src="js/data01.js"></script>
+</head>
+<body>
+    <ul class="nav">
+    
+      <li class="drop-down">
+        <a href="#"></a>
+    
+        <ul class="drop-down-content">
+    
+          <li>
+            <a href="./home.html">自动切换</a>
+          </li>
+    
+          <li>
+            <a href="./screen.html">第一屏</a>
+          </li>
+    
+          <li>
+            <a href="./thrid.html">第二屏</a>
+          </li>
+
+    
+          <li>
+            <a href="./four.html">第三屏</a>
+          </li>
+					<li>
+            <a href="./index.html">回到主页</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  <div class="first-screen root-wrap">
+    <header>
+      <!-- <img src="img/title1.png"> -->
+      <div class="gifImg">
+          <span class="month-tip">竞赛管理大数据平台</span>
+      </div>
+      <!-- <div class="title_img"><img src="img/title_left_img.png" alt=""> </div> -->
+    </header>
+    <div class="main clearfix">
+      <div class="aside-left fl">
+        <div class="top left-top">
+          <h3>作品排行</h3>
+          <div class="tit clearfix">
+            <span class="ranking fl"></span>
+            <span class="name fl">作品名</span>
+            <span class="company fl">制作团队</span>
+            <span class="hot fl">作品评分</span>
+          </div>
+          <div class="con-wrap">
+            <div class="over-wrap">
+              <ul class="con">   
+                <li class="active">
+                  <div class="book-rank clearfix">
+                    <span class="ranking fl">1</span>
+                    <span class="name fl">基于CNN的神经网络的农业小车</span>
+                    <span class="company fl">陈冰</span>
+                    <span class="hot fl">9.33</span>
+                  </div>
+                  <div class="book-show clearfix">
+                      <div class="img-box fl">
+                        <img src="" alt="">
+                      </div>
+                      <div class="content fl">
+                        <p>
+                          <span>作者：</span>
+                          <span class="authors">(瑞典)林格伦</span>
+                        </p>
+                        <p>
+                          <span>作品编号：</span>
+                          <span class="isbn">9787544270878</span>                    
+                        </p>
+                        <p>
+                          <span>参赛日期：</span>
+                          <span class="pub-date">2014年05月</span>                    
+                        </p>
+                        <p>
+                          <span>热度</span>
+                          <span class="pricing">￥39.50</span>                    
+                        </p>                
+                      </div>
+                    </div>
+                </li> 
+                <li>
+                  <div class="book-rank clearfix">
+                    <span class="ranking fl">2</span>
+                    <span class="name fl">窗边的小豆豆</span>
+                    <span class="company fl">人民文学出版社</span>
+                    <span class="hot fl">9.32</span>
+                  </div>
+                  <div class="book-show clearfix">
+                      <div class="img-box fl">
+                        <img src="" alt="">
+                      </div>
+                      <div class="content fl">
+                        <p>
+                          <span>作者：</span>
+                          <span class="authors">(日)黑柳彻子</span>
+                        </p>
+                        <p>
+                          <span>作品编号：</span>
+                          <span class="isbn">9787208061644</span>                    
+                        </p>
+                        <p>
+                          <span>参赛日期</span>
+                          <span class="pub-date">2006年05月</span>                    
+                        </p>
+                        <p>
+                          <span>热度</span>
+                          <span class="pricing">￥29.00</span>                    
+                        </p>                
+                      </div>
+                    </div>
+                </li>                                      
+                <li>
+                  <div class="book-rank clearfix">
+                    <span class="ranking fl">3</span>
+                    <span class="name fl">我的第一本地理启蒙书</span>
+                    <span class="company fl">社会科学文献出版社</span>
+                    <span class="hot fl">9.31</span>
+                  </div>
+                  <div class="book-show clearfix">
+                    <div class="img-box fl">
+                      <img src="" alt="">
+                    </div>
+                    <div class="content fl">
+                      <p>
+                        <span>作者：</span>
+                        <span class="authors">郑利强</span>
+                      </p>
+                      <p>
+                        <span>作品编号：</span>
+                        <span class="isbn">9787550263932</span>                    
+                      </p>
+                      <p>
+                        <span>参赛日期日期：</span>
+                        <span class="pub-date">2016年01月</span>                    
+                      </p>
+                      <p>
+                        <span>热度：</span>
+                        <span class="pricing">￥39.80</span>                    
+                      </p>                
+                    </div>
+                  </div>
+                </li>           
+                <li>
+                  <div class="book-rank clearfix">
+                    <span class="ranking fl">4</span>
+                    <span class="name fl">神奇校车·桥梁书版</span>
+                    <span class="company fl">人民出版社</span>
+                    <span class="hot fl">9.30</span>
+                  </div>
+                  <div class="book-show clearfix">
+                      <div class="img-box fl">
+                        <img src="" alt="">
+                      </div>
+                      <div class="content fl">
+                        <p>
+                          <span>作者：</span>
+                          <span class="authors">乔安娜柯尔</span>
+                        </p>
+                        <p>
+                          <span>作品编号：</span>
+                          <span class="isbn">9787100077040</span>                    
+                        </p>
+                        <p>
+                          <span>参数日期：</span>
+                          <span class="pub-date">2011年06月</span>                    
+                        </p>
+                        <p>
+                          <span>热度：</span>
+                          <span class="pricing">￥24.90</span>                    
+                        </p>                
+                      </div>
+                    </div>
+                </li>
+                <li>
+                  <div class="book-rank clearfix">
+                    <span class="ranking fl">5</span>
+                    <span class="name fl">不一样的卡梅拉手绘本</span>
+                    <span class="company fl">高等教育出版社</span>
+                    <span class="hot fl">9.29</span>
+                  </div>
+                  <div class="book-show clearfix">
+                      <div class="img-box fl">
+                        <img src="" alt="">
+                      </div>
+                      <div class="content fl">
+                        <p>
+                          <span>作者：</span>
+                          <span class="authors">法)克利斯提昂 约里波瓦著郑迪蔚</span>
+                        </p>
+                        <p>
+                          <span>作品编号：</span>
+                          <span class="isbn">21005473</span>                    
+                        </p>
+                        <p>
+                          <span>参赛日期：</span>
+                          <span class="pub-date">2011年01月</span>                    
+                        </p>
+                        <p>
+                          <span>热度：</span>
+                          <span class="pricing">￥132.00</span>                    
+                        </p>                
+                      </div>
+                    </div>
+                </li>                 
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- pressRanking -->
+        <div class="bottom left-bottom">
+          <div class="bottom-in">
+            <h3>中国大学生竞赛排行榜</h3>
+            <div class="tit clearfix">
+              <span class="ranking fl">排名</span>
+              <span class="short fl">竞赛名称</span>
+              <span class="hot fl">综合评分</span>
+            </div>
+            <ul class="con">      
+              <li>
+                <div class="book-rank clearfix">
+                  <span class="ranking fl">1</span>
+                  <span class="short fl">全国大学生数学建模竞赛</span>
+                  <span class="hot fl">9.85</span>
+                </div>
+              </li> 
+              <li>
+                <div class="book-rank clearfix">
+                  <span class="ranking fl">2</span>
+                  <span class="short fl">全国大学生电子设计竞赛</span>
+                  <span class="hot fl">9.64</span>
+                </div>
+              </li> 
+              <li>
+                <div class="book-rank clearfix">
+                  <span class="ranking fl">3</span>
+                  <span class="short fl">中国大学生程序设计竞赛</span>
+                  <span class="hot fl">9.57</span>
+                </div>
+              </li> 
+              <li>
+                <div class="book-rank clearfix">
+                  <span class="ranking fl">4</span>
+                  <span class="short fl">全国大学生机械创新设计大赛</span>
+                  <span class="hot fl">9.43</span>
+                </div>
+              </li>                                                                                   
+              <li>
+                <div class="book-rank clearfix">
+                  <span class="ranking fl">5</span>
+                  <span class="short fl">全国大学生结构设计竞赛</span>
+                  <span class="hot fl">9.26</span>
+                </div>
+              </li> 
+              <!-- 更多竞赛排名 -->
+            </ul>          
+          </div>
+        </div>
+      </div>
+      <div class="middle-map fl">
+        <div class="map-wrap">
+          <h3 class="clearfix">
+            <dl class="fl">
+              <dt>A类赛事</dt>
+              <dd id="book-data" class="unit-number">64</dd>
+            </dl>
+            <dl class="fl">
+              <dt>B类赛事</dt>
+              <dd id="varity-data" class="unit-type">125</dd>
+            </dl> 
+            <dl class="fl">
+              <dt>销售码洋</dt>
+              <dd id="sales-data" class="unit-wanyuan">30,340</dd>
+            </dl> 
+            <dl class="fl">
+              <dt>参赛人数</dt>
+              <dd>22</dd>
+            </dl> 
+            <dl class="fl">
+              <dt>累计参赛</dt>
+              <dd id="stock-data" class="unit-wanyuan">12,710</dd>
+            </dl>                                  
+          </h3>
+          <span class="title-map">全国竞赛热点图</span>
+          <div id="map" style="width: 100%;height: 100%;"></div>
+        </div>         
+      </div>
+      <div class="aside-right fl">      
+        <div class="pie clearfix">
+          <div class="pie1 fl" style="width: 100%;">
+            <h3>参赛领域占比</h3>
+            <div id="pie1" style="width: 100%;height: 80%;"></div>
+          </div>
+                     
+        </div>
+        <div class="area-rank">
+          <h3>参赛热省(市)</h3>
+          <div class="con">
+            <ul>
+              <li>
+                <span class="num">1</span>
+                <span class="city-name">湖南</span>
+                <span class="bar">
+                  <b class="bar-in"></b>
+                </span>
+                <span class="rank-value">1875万</span>
+              </li>
+              <li>
+                <span class="num">2</span>
+                <span class="city-name">陕西</span> 
+                <span class="bar">
+                    <b class="bar-in"></b>
+                  </span>
+                  <span class="rank-value">1649万</span>                               
+              </li>
+              <li>
+                <span class="num">3</span>
+                <span class="city-name">云南</span> 
+                <span class="bar">
+                  <b class="bar-in"></b>
+                </span>
+                <span class="rank-value">1396万</span>                               
+              </li>
+              <li>
+                <span class="num">4</span>
+                <span class="city-name">湖北</span>
+                <span class="bar">
+                  <b class="bar-in"></b>
+                </span>
+                <span class="rank-value">1225万</span>                                 
+              </li>
+              <li>
+                <span class="num">5</span>
+                <span class="city-name">江苏</span>
+                <span class="bar">
+                  <b class="bar-in"></b>
+                </span>
+                <span class="rank-value">1203万</span>              
+              </li>
+              <li>
+                <span class="num">6</span>
+                <span class="city-name">江西</span> 
+                <span class="bar">
+                  <b class="bar-in"></b>
+                </span>
+                <span class="rank-value">1108万</span>                               
+              </li>
+              <li>
+                <span class="num">7</span>
+                <span class="city-name">内蒙古</span>  
+                <span class="bar">
+                  <b class="bar-in"></b>
+                </span>
+                <span class="rank-value">740万</span>                            
+              </li>
+              <li>
+                <span class="num">8</span>
+                <span class="city-name">四川</span>  
+                <span class="bar">
+                  <b class="bar-in"></b>
+                </span>
+                <span class="rank-value">695万</span>                             
+              </li>  
+              <li>
+                <span class="num">9</span>
+                <span class="city-name">浙江</span>  
+                <span class="bar">
+                  <b class="bar-in"></b>
+                </span>
+                <span class="rank-value">667万</span>                             
+              </li>                                                      
+            </ul>
+          </div>
+        </div>
+        <div class="trend">
+          <h3>获奖折线图</h3>
+          <div id="trendBar1" style="width: 100%;height: 80%;"></div>
+        </div> 
+      </div>  
+    </div>
+    <div class="main-bottom">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+  <script src="js/mapIndex.js"></script>
+</body>
+</html>

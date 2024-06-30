@@ -1,0 +1,430 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<meta http-equiv="refresh" content="60;url=http://localhost:8080/four.html">
+<script type="text/javascript" src="ejs/jquery.js"></script>
+<script type="text/javascript" src="ejs/echarts.min.js"></script>
+<script type="text/javascript" src="ejs/area_echarts.js"></script>
+<!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5ieMMexWmzB9jivTq6oCRX9j&callback"></script> -->
+<script type="text/javascript" src="ejs/js.js"></script>
+<link rel="stylesheet" href="ecss/style.css">
+<style>
+	.nav {
+  position: fixed;
+  right: 0;
+  z-index: 20000;
+  width: 30%;
+  height: 10%;
+  font-size: 0.65625em; }
+  .nav ul {
+    list-style: none;
+    min-width: 500px;
+    width: 100%; }
+  .nav ul a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 4.5;
+    color: white;
+    /* background-color: #2f3e45; */ }
+
+.drop-down {
+  width: 100%;
+  height: 100%; }
+
+.drop-down-content li {
+  display: inline-block;
+  float: left;
+  width: 20%;
+  min-width: 100px;
+  height: 100%; }
+
+.drop-down {
+  /*position: relative;*/
+  width: 100%; }
+
+.drop-down-content {
+  padding: 0;
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /*position: absolute;*/ }
+
+h3 {
+  font-size: 30px;
+  clear: both; }
+
+.drop-down-content li:hover a {
+  color: bisque; }
+
+.nav .drop-down:hover .drop-down-content {
+  display: block; }
+</style>
+</head>
+<script>
+</script>
+<body>
+	<ul class="nav">
+    
+		<li class="drop-down">
+			<a href="#"></a>
+	
+			<ul class="drop-down-content">
+	
+				<li>
+					<a href="./home.html">自动切换</a>
+				</li>
+	
+				<li>
+					<a href="./screen.html">第一屏</a>
+				</li>
+	
+				<li>
+					<a href="./thrid.html">第二屏</a>
+				</li>
+
+	
+				<li>
+					<a href="./four.html">第三屏</a>
+				</li>
+				<li>
+					<a href="./index.html">回到主页</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<div class="head clearfix">
+	<h1 class="">竞赛管理系统大数据平台</h1>
+		<div class="time" id="showTime">2024/6/12 17:00:12</div>
+		<!-- <div class="name">长沙双数科技有限公司</div> -->
+		<script>
+var t = null;
+    t = setTimeout(time,1000);//開始运行
+    function time()
+    {
+       clearTimeout(t);//清除定时器
+       dt = new Date();
+		var y=dt.getFullYear();
+		var mt=dt.getMonth()+1;
+		var day=dt.getDate();
+       var h=dt.getHours();//获取时
+       var m=dt.getMinutes();//获取分
+       var s=dt.getSeconds();//获取秒
+       document.getElementById("showTime").innerHTML = y+"/"+mt+"/"+day+" "+h+":"+m+":"+s+"";
+       t = setTimeout(time,1000); //设定定时器，循环运行     
+    } 
+
+</script>
+	</div>
+	<div class="mainbox">
+	
+	<ul class="clearfix nav1">
+		<li style="width: 26%">
+		<div class="box">
+			<div class="tit"><span>当日情况</span><p></p></div>
+			<div class="boxnav" style="height: 320px;">
+				<ul class="drqk clearfix">
+				<li>
+					<div class="icon"><img src="images/icona.png"></div>
+					<div><span>今日报名人数</span>
+					<p><em>1358</em><i>人</i></p></div>
+					</li>
+				<li><div class="icon"><img src="images/icona.png"></div>
+					<div><span>昨日报名人数</span>
+					<p><em>1983</em><i>人</i></p></div></li>
+				<li><div class="icon"><img src="images/icona.png"></div>
+					<div><span>系统总报名人数</span>
+					<p><em>930</em><i>人</i></p></div></li>
+				<li><div class="icon"><img src="images/icona.png"></div>
+					<div><span>竞赛总数</span>
+					<p><em>371</em><i>人</i></p></div></li>
+				<li><div class="icon"><img src="images/icona.png"></div>
+					<div><span>获奖总数</span>
+					<p><em>1683</em><i>人</i></p></div></li>
+				<li><div class="icon"><img src="images/icona.png"></div>
+					<div><span>资料总数</span>
+					<p><em>1091</em><i>人</i></p></div></li>
+				</ul>
+			</div>
+			</div>
+			<div class="box">
+			<div class="tit"><span>获奖概率 </span><p></p></div>
+			<div class="boxnav" style="height:140px;">
+			<table class="table1" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>                                             
+      <th>赛事名称</th>
+      <th>一等奖</th>
+      <th>二等奖</th>
+      <th>三等奖</th>
+    </tr>
+    <tr>
+      <td>获奖数</td>
+      <td>0.03<span class="text-b">↓0.01%</span></td>
+      <td>163.00<span class="text-d">↑4.01%</span></td>
+      <td>163.00<span class="text-d">↑4.01%</span></td>
+    </tr>
+      <tr>
+      <td>获奖率（%）</td>
+      <td>0.3<span class="text-b">↓0.01%</span></td>
+      <td>100%<span class="text-d">↑4.01</span></td>
+      <td>81.92%<span class="text-d">↑4.01</span></td>
+    </tr>
+
+      
+  </tbody>
+</table>
+			</div>
+			</div>
+			
+			<div class="box">
+				<div class="tit"><span>竞赛管理系统</span><p></p></div>
+				<div class="boxnav" style="height: 250px;">
+					<ul class="ylfw">
+						<li>
+							<div class="ylfwbox fora">
+								<p>报名总人数</p>
+								<ol><span>1500</span><em>人</em><i class="text-d">↑5.00%</i></ol>
+								<div class="forb"></div>
+							</div>
+						</li>
+						<li>
+							<div class="ylfwbox fora">
+								<p>已提交作品数</p>
+								<ol><span>1200</span><em>件</em><i class="text-d">↑4.50%</i></ol>
+								<div class="forb"></div>
+							</div>
+						</li>
+						<li>
+							<div class="ylfwbox fora">
+								<p>平均评分</p>
+								<ol><span>85.4</span><em>分</em><i class="text-d">↑3.20%</i></ol>
+								<div class="forb"></div>
+							</div>
+						</li>
+						<li>
+							<div class="ylfwbox fora">
+								<p>评审总数</p>
+								<ol><span>50</span><em>人</em><i class="text-d">↑2.00%</i></ol>
+								<div class="forb"></div>
+							</div>
+						</li>
+						<li>
+							<div class="ylfwbox fora">
+								<p>通过初审作品数</p>
+								<ol><span>800</span><em>件</em><i class="text-d">↑4.00%</i></ol>
+								<div class="forb"></div>
+							</div>
+						</li>
+						<li>
+							<div class="ylfwbox fora">
+								<p>入围决赛作品数</p>
+								<ol><span>200</span><em>件</em><i class="text-d">↑2.50%</i></ol>
+								<div class="forb"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+		</li>
+		<li style="width:48%">
+		
+		<div class="box" style="position: relative">
+			<div class="map">
+        <div class="map1"><img src="images/lbx.png"></div>
+        <div class="map2"><img src="images/jt.png"></div>
+        <div class="map3"><img src="images/map.png"></div>
+        
+      </div>
+
+			<div class="" id="map" style="height: 557px; position: relative; z-index: 100"></div>
+
+		<!--		<script>
+    // 百度地图API功能
+    var map = new BMap.Map("map");    // 创建Map实例
+    map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+    map.addControl(new BMap.MapTypeControl({
+        mapTypes:[
+            BMAP_NORMAL_MAP,
+            BMAP_HYBRID_MAP
+        ]}));
+    var mapStyle={
+        style:"midnight"
+    };
+    map.setMapStyle(mapStyle);
+    map.setCurrentCity("北京");          // 设置地图显示的城市 此项是必须设置的
+    map.enableScrollWheelZoom(true);
+</script>
+				-->
+		
+			</div>
+			<div class="box">
+				<div class="tit"><span>系统用户</span><p></p></div>
+				<div class="boxnav" style="height: 250px;">
+					<ul class="jcjg">
+						<li>
+							<h3>管理员</h3>
+							<div class="jcnav">
+								<img src="images/icona.png">
+								<div class="jcnavp">
+									<div class="fora">
+										<ol>总用户数</ol>
+										<span>1200</span>
+										<i class="text-d">+4.50</i>
+										<div class="forb"></div>
+									</div>
+									<div class="fora">
+										<ol>活跃用户</ol>
+										<span>950</span>
+										<i class="text-d">+3.20</i>
+										<div class="forb"></div>
+									</div>
+									<div class="fora">
+										<ol>新增用户</ol>
+										<span>150</span>
+										<i class="text-d">+2.00</i>
+										<div class="forb"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h3>教师用户</h3>
+							<div class="jcnav">
+								<img src="images/icona.png">
+								<div class="jcnavp">
+									<div class="fora">
+										<ol>总数</ol>
+										<span>300</span>
+										<i class="text-s">-1.10</i>
+										<div class="forb"></div>
+									</div>
+									<div class="fora">
+										<ol>活跃数</ol>
+										<span>280</span>
+										<i class="text-d">+0.50</i>
+										<div class="forb"></div>
+									</div>
+									<div class="fora">
+										<ol>新增数</ol>
+										<span>30</span>
+										<i class="text-d">+1.20</i>
+										<div class="forb"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<h3>学生用户</h3>
+							<div class="jcnav jcnav2">
+								<img src="images/icona.png">
+								<div class="jcnavp">
+									<div class="fora">
+										<ol>总人数</ol>
+										<span>5000</span>
+										<i class="text-d">+5.80</i>
+										<div class="forb"></div>
+									</div>
+									<div class="fora">
+										<ol>活跃人数</ol>
+										<span>4500</span>
+										<i class="text-d">+4.50</i>
+										<div class="forb"></div>
+									</div>
+									<div class="fora">
+										<ol>新增人数</ol>
+										<span>600</span>
+										<i class="text-d">+3.00</i>
+										<div class="forb"></div>
+									</div>
+									<div class="fora">
+										<ol>毕业人数</ol>
+										<span>500</span>
+										<i class="text-s">-2.50</i>
+										<div class="forb"></div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+		</li>
+		<li style="width: 26%">
+			<div class="box">
+				<div class="tit"><span>竞赛管理模块</span><p></p></div>
+				<div class="boxnav" id="" style="height: 280px;">
+					<ul class="tqdb">
+						<li>
+							<div id="echart1"></div>
+							<h3>报名人数百分比</h3>
+						</li>
+						<li>
+							<div id="echart2"></div>
+							<h3>作品提交百分比</h3>
+						</li>
+						<li>
+							<div id="echart3"></div>
+							<h3>初审通过百分比</h3>
+						</li>
+						<li>
+							<div id="echart4"></div>
+							<h3>决赛入围百分比</h3>
+						</li>
+						<li>
+							<div id="echart5"></div>
+							<h3>平均评分分布</h3>
+						</li>
+						<li>
+							<div id="echart6"></div>
+							<h3>评审参与百分比</h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="box">
+			<div class="tit"><span>竞赛动态</span><p></p></div>
+			<div class="boxnav" style="height: 180px;"   id="echart7">
+
+	
+			</div>
+			</div>
+			
+			<div class="box">
+				<div class="tit"><span>竞赛构成</span><p></p></div>
+				<div class="boxnav" style="height: 250px;">
+					<ul class="jbgc">
+						<li>
+							<div class="jztxt">
+								<div>
+									<h3>1500<i>人</i></h3>
+									<span>总报名人数</span>
+								</div>
+								<div>
+									<h3>1200<i>件</i></h3>
+									<span>已提交作品</span>
+								</div>
+								<div>
+									<h3>800<i>件</i></h3>
+									<span>初审通过</span>
+								</div>
+							</div>
+						</li>
+						<li style="width:90%" id="echart8"></li>
+					</ul>
+				</div>
+			</div>
+		
+		</li>
+		</ul>
+	</div>
+</body>
+</html>
